@@ -1,0 +1,1 @@
+C:\login_signup\login_signup\build\app\intermediates\cxx\Debug\4b14263c\obj\armeabi-v7a
