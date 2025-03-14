@@ -56,7 +56,6 @@ abstract class AbstractAuthStore with Store {
   @action
   Future<bool> login(String username, String password) async {
     var user = await databaseHelper.loginUser(username, password);
-    print('/////user $user ');
     if (user != null) {
       await _saveUser(username);
       return true;

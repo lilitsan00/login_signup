@@ -6,6 +6,7 @@ import 'package:login_signup/screens/authentication/auth_store.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
