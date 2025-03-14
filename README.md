@@ -1,16 +1,56 @@
-# login_signup
+# Flutter Login/Signup App
 
-A new Flutter project.
+## Features
+- User registration with email, username, and password
+- Secure login authentication
+- Persistent user session with `SharedPreferences`
+- Animated form transitions between login and signup
+- `MobX` state management for reactive UI updates
 
-## Getting Started
+## Technologies Used
+- Flutter
+- MobX
+- SharedPreferences
+- SQLite (`sqflite`)
+- Provider for dependency injection
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+├─ assets
+│  ├─ fonts
+│  │  ├─ TTNormsPro-Bold.ttf
+│  │  └─ TTNormsPro-Regular.ttf
+│  └─ icons
+│     ├─ background.svg
+│     └─ logo.svg
+│
+├─ lib
+│  ├─ constants
+│  │  ├─ app_theme.dart
+│  │  ├─ colors.dart
+│  │  └─ constants.dart
+│  ├─ database_helper
+│  │  └─ database_selper.dart
+│  ├─ extension
+│  │  └─ string_extension.dart
+│  ├─ main.dart
+│  └─ screens
+│     ├─ authentication
+│     │  ├─ auth_screen.dart
+│     │  ├─ auth_store.dart
+│     │  └─ auth_store.g.dart
+│     ├─ home
+│     │  └─ home_screen.dart
+│     └─ login_signup
+│        ├─ login_signup_screen.dart
+│        ├─ _signup_fields.dart
+│        └─ _widgets.dart
+├─ pubspec.lock
+├─ pubspec.yaml
+├─ README.md
+├─ test
+│  └─ auth_store_test.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
